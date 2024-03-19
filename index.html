@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Cocteles</title>
+</head>
+
+<body>
+
+    <header class="menu">
+            <h2>Merchocteles</h2>
+            <input type="text" id="input" placeholder="Ingresa el coctel a buscar">
+            <button id="buscarb"><i class="fa-solid fa-magnifying-glass" id="busca"></i></button>
+    </header>
+    <main>
+
+        <div class="coctel-random">
+            <h1>Coctel random</h1><button class="random" onclick="random()"><i class="fa-solid fa-shuffle"></i></button>
+            <div id="loader" class="loader">
+                <p>Loading...</p>
+            </div>
+            <img src="" id="imagen_random" alt="">
+            <div class="informacion_random">
+
+                <span>ID</span>
+                <h2 class="id-producto_random"></h2>
+                <span>Nombre:</span>
+                <h2 class="nombre-producto_random"></h2>
+                <span>Categoria</span>
+                <h2 class="categoria_random"></h2>
+                <span>Ingredientes</span>
+                <h2 class="ingredientes_random"> </h2>
+                <span>Instrucciones de su preparacion:</span>
+                <h2 class="instrucciones_random"></h2>
+            </div>
+        </div>
+        
+        <div class="cocteles">
+            <h1>Cocteles</h1>
+            <section id="cocktailList"></section>
+
+        </div>
+        <div class="favoritos">
+            <h1>Tus favoritos</h1>
+            <span>Eliminiar Todos los favoritos</span>
+            <button id="eliminar"> <i class="fa-solid fa-trash"></i></button>
+            <section id="favoritos"></section>
+
+
+        </div>
+        <script src="main.js"></script>
+    </main>
+</body>
+
+</html>
